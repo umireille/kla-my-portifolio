@@ -1,60 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portifolio.css">
-    <title>Document</title>
+
+    <!--========== BOX ICONS ==========-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/boxicons/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/portifolio.css">
+
+    <title>UMURERWA Mireille</title>
 </head>
+
 <body>
-        <div class="container main-conatiner">
-            <h1>Web Designer</h1>
-            <div class="content">
-                <div class="icon">
-                    <img src="images/home-regular-24.png" alt="">
-                    <img src="images/book-alt-regular-24.png" alt="">
-                    <img src="images/laptop-regular-24.png" alt="">
-                    <img src="images/chat-solid-24.png" alt="">
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container nav-hidden">
+            <a href="#" class="nav__logo">UMURERWA Mireille</a>
 
-                </div>
-                <div class="img-container">
-                    <img src="images/IMG_0619.JPG" alt="">
-                </div>
-                <div class="contents">
-                    <p>
-                        Creating digital experience for clients around the world.
-                    </p>
-                    <h1>Umurerwa Mireille</h1>
-                </div>
+            <div class="nav__menu" id="nav-menu" >
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
             </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+        <div class="side__nav-menu" id="sidenav-menu">
+            <ul class="side__nav-list">
+                <li class="side__nav-item"><a href="#home" title="Home" class="side__nav-link side__active"><i class='bx bx-home'></i></a></li>
+                <li class="side__nav-item"><a href="#about" title="About me" class="side__nav-link"><i class='bx bx-book-alt'></i></a></li>
+                <li class="side__nav-item"><a href="#work" title="My work" class="side__nav-link"><i class='bx bx-laptop'></i></a></li>
+                <li class="side__nav-item"><a href="#contact" title="Contact me" class="side__nav-link"><i class='bx bxs-chat'></i></a></li>
+            </ul>
         </div>
-        <div class="container main-conatiner">
-            <div class="content">
-                <div class="icon">
-                    <img src="images/home-regular-24.png" alt="">
-                    <img src="images/book-alt-regular-24.png" alt="">
-                    <img src="images/laptop-regular-24.png" alt="">
-                    <img src="images/chat-solid-24.png" alt="">
+    </header>
+    
+    <main class="l-main">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__img">
+                    <h1 class="title__img">Web Designer</h1>
+                    <img src="assets/img/mireille.JPG" alt="">
+                </div>
 
+                <div class="home__data">
+                    <p class="home__description">Creating digital experience for clients around the world.</p>
+                    <h1 class="home__title">UMURERWA Mireille</h1>
                 </div>
-                <div class="img-container">
-                    <img src="images/IMG_0619.JPG" alt="">
+                
+            </div>
+        </section>
+        <!--==========About==========-->
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="./assets/img/mireille.JPG" alt="">
                 </div>
-                <div class="about">
-                    <h1>About Me</h1>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.                     </p>
-                    <div class="progress">
-                        <h1>HTML/CSS</h1> <div class="card"></div>
-                        <h1>Mysql</h1><div class="card"></div>
-                        <h1>C++</h1><div class="card"></div>
-                        <h1>Java</h1><div class="card"></div>
+                <div class="about__data">
+                    <h2 class="section-title-center ">About me</h2>
+                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eos
+                        architecto obcaecati? Laboriosam, dicta? Quos ipsum expedita dicta accusamus exercitationem, cum
+                        maxime unde minima veritatis obcaecati fuga quis ab cumque itaque aperiam tempore dolores
+                        voluptatibus magni nisi iure recusandae. Dolor eum laboriosam expedita
+                    </p>
+
+                    <h2 class="section-title-center ">My skills</h2>
+                    <p class="about__description">I have Skills in the following web technologies</p>
+                    <div class="skills__container bd-grid">
+                        <div class="skills__data">
+                            <img src="./assets/img/html5.png" alt="" class="skills__img">
+                    
+                        </div>
+                    
+                        <div class="skills__data">
+                            <img src="./assets/img/css3.png" alt="" class="skills__img">
+                    
+                        </div>
+                    
+                        <div class="skills__data">
+                            <img src="./assets/img/js.png" alt="" class="skills__img">
+                        </div>
+                    
                     </div>
                 </div>
+                
+                
             </div>
-        </div>
+        
+            
+        </section>
+        <!--========== Work ==========-->
+        <section class="work section bd-container" id="work">
+            <h2 class="section-title section">My projects</h2>
+            <div class="work__container bd-grid">
+                <div class="work__content">
+                    <img src="./assets/img/work-img1.jpg" class="work__img" alt="">
+                </div>
+        
+                <div class="work__content">
+                    <img src="./assets/img/work-img3.jpg" class="work__img" alt="">
+                </div>
+                <div class="work__content">
+                    <img src="./assets/img/work-img2.jpg" class="work__img" alt="">
+                </div>
+                
+        
+            </div>
+        </section>
+        <!--========== Contact me ==========-->
+        <!-- <section class="section"></section>
+        <section class="section"></section>
+        <section class="section"></section> -->
+        
+        <section class="contact section  bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__content">
+                    <h2 class="section-title section">Contact me</h2>
+                    <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor perspiciatis exercitationem harum ipsum facere sunt praesentium quis inventore quibusdam sed?</p>
+                    <!-- Social media I cons -->
+                    <div class="social__media">
+                        <a href="#" class="social__link"><i class="bx bxl-facebook-circle"></i></a>
+                        <a href="#" class="social__link"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#" class="social__link"><i class="bx bxl-twitter"></i></a>
+
+                    </div>
+                </div>
+        
+                <div class="contact__form">
+                    <!-- <form action="#" class="form__content" method="post">
+                        <div class="form__div bd-flex">
+                            <div class="form__div-input">
+                                <input type="text" name="names" placeholder="Names"class="form__input" required>
+                            </div>
+                            <div class="form__div-input">
+                                <input type="text" name="email" placeholder="Email"class="form__input" required>
+                            </div>
+                        </div>
     
-    
+        
+                        <div class="form__div">
+                            <div class="form__div-input">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="form__input" required></textarea>
+                            </div>
+                        </div>
+        
+                        <button type="submit" class="button">Send</button>
+                    </form> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========== MAIN JS ==========-->
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
