@@ -32,11 +32,17 @@ function scrollActive(){
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
         sectionId = current.getAttribute('id')
-
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.side__nav-menu a[href*=' + sectionId + ']').classList.add('side__active')
+          document.querySelector('.side__nav-menu a[href*=' + sectionId + ']').classList.add('side__active')
+          document
+            .querySelector(".nav__menu a[href*=" + sectionId + "]")
+            .classList.add("active-link");
+          // console.log(sectionId)
         }else{
             document.querySelector('.side__nav-menu a[href*=' + sectionId + ']').classList.remove('side__active')
+             document
+               .querySelector(".nav__menu a[href*=" + sectionId + "]")
+               .classList.remove("active-link");
         }
     })
 }
