@@ -11,24 +11,6 @@
     <link rel="stylesheet" href="assets/css/portifolio.css">
 
     <title>UMURERWA Mireille</title>
-    <script>
-        function validateform(){
-            var x=document.forms["myform"]["names"].value;
-            var y=document.forms["myform"]["email"].value;
-            var z=document.forms["myform"]["message"].value;
-            if(x==""){
-                alert("names should be filled out");
-            }
-          else if(y==""){
-                alert("email should be filled out");
-                return false
-            } 
-            else if(z==""){
-                alert("please enter message");
-                return false}
-        }
-    
-    </script>
 </head>
 
 <body>
@@ -154,13 +136,15 @@
                 </div>
 
                 <div class="contact__form">
-                    <form action=" " class="form__content"name="myform"onsubmit="return validateform()" method="post">
+                    <div id="contact-error"></div>
+                    <form action="#" class="form__content" onsubmit="return FormValidation()" id="contact-form" data-netlify="true" name=" sign-in" value="sign-in">
+                        <input type="hidden" name="sign-in" value="sign-in">
                         <div class="form__div bd-flex">
-                            <input type="text" name="names" placeholder="Names" class="form__input" >
-                            <input type="email" name="email" placeholder="Email" class="form__input" >
+                            <input type="text" name="names" placeholder="Names" class="form__input" id="contact-names">
+                            <input type="text" name="email" placeholder="Email" class="form__input" id="contact-email">
                         </div>
                         <div class="form__div">
-                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="text__area"></textarea>
+                            <textarea name="message" placeholder="Message" class="text__area" id="contact-msg"></textarea>
                         </div>
                         <button type="submit" class="form__button">Send</button>
                     </form>
@@ -168,7 +152,9 @@
             </div>
         </section>
     </main>
-
+<footer class="footer bd-container section">
+    <p>&#169; 2022 UMURERWA Mireille. All right reserved</p>
+</footer>
     <!--========== MAIN JS ==========-->
     <script src="./assets/js/script.js"></script>
 </body>

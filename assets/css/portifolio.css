@@ -314,6 +314,15 @@ img {
   width: 280px;
   justify-self: center;
 }
+#contact-error{
+  color: red;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  width: max-content;
+  margin-bottom: var(--mb-4);
+  font-size: var(--normal-font-size);
+}
 .form__content {
   width: 270px;
 }
@@ -374,6 +383,14 @@ img {
 .social__link{
   color: var(--title-color);
   font-size: var(--h2-font-size);
+}
+/* Footer */
+.footer{
+  text-align: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  font-weight: bold;
+  margin-top: 4rem;
 }
 /*========== MEDIA QUERIES ==========*/
 

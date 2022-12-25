@@ -47,3 +47,31 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+// Contact form
+
+function FormValidation() {
+  //get all element onto the DOM
+  const contactNames = document.getElementById("contact-names").value;
+  const contactEmail = document.getElementById("contact-email").value;
+  const contactMsg = document.getElementById("contact-msg").value;
+  const errorMsg = document.getElementById("contact-error");
+  let errorText; // Will hold error msg
+
+  if (contactNames === "" || contactNames.length < 2) {
+    errorText = "Ooops! looks like you didn't enter your names";
+    errorMsg.innerHTML = errorText;
+    return false;
+  }
+  if (contactEmail === "" || contactEmail.indexOf("@") == -1) {
+    errorText = "Ooops! looks like you didn't enter your email correctly!";
+    errorMsg.innerHTML = errorText;
+    return false;
+  }
+  if (contactMsg === "" || contactMsg < 30) {
+    errorText = "Ooops! looks like you didn't enter your message!";
+    errorMsg.innerHTML = errorText;
+    return false;
+  }
+  return true;
+}
